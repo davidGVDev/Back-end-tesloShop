@@ -1,3 +1,5 @@
+# Teslo Shop API
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -19,55 +21,62 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descripción
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Teslo Shop es una API RESTful desarrollada con NestJS para gestionar productos de una tienda en línea. Esta aplicación utiliza TypeORM para la gestión de la base de datos y sigue las mejores prácticas de desarrollo con TypeScript.
 
-## Installation
+## Características
+
+- 🚀 Desarrollado con NestJS
+- 📦 Base de datos PostgreSQL con TypeORM
+- 🔒 Configuración de variables de entorno
+- 📝 Documentación de API
+- 🧪 Testing con Jest
+- 🛠️ Docker support
+
+## Requisitos Previos
+
+- Node.js (v16 o superior)
+- PostgreSQL
+- Docker (opcional)
+
+## Instalación
 
 ```bash
+# Clonar el repositorio
+$ git clone [url-del-repositorio]
+
+# Instalar dependencias
 $ npm install
-```
 
-## Running the app
+# Configurar variables de entorno
+$ cp .env.template .env
 
-```bash
-# development
-$ npm run start
-
-# watch mode
+# Iniciar la aplicación
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+## Endpoints
 
-```bash
-# unit tests
-$ npm run test
+### Productos
 
-# e2e tests
-$ npm run test:e2e
+- `POST /products` - Crear un nuevo producto
+- `GET /products` - Obtener todos los productos
+- `GET /products/:id` - Obtener un producto por ID
+- `PATCH /products/:id` - Actualizar un producto
+- `DELETE /products/:id` - Eliminar un producto
 
-# test coverage
-$ npm run test:cov
-```
+## Scripts Disponibles
 
-## Support
+- `npm run start` - Iniciar la aplicación
+- `npm run start:dev` - Iniciar en modo desarrollo
+- `npm run start:prod` - Iniciar en modo producción
+- `npm run test` - Ejecutar tests
+- `npm run test:e2e` - Ejecutar tests end-to-end
+- `npm run lint` - Lint del código
+- `npm run format` - Formatear código
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Licencia
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Este proyecto está bajo la Licencia [UNLICENSED](LICENSE).
