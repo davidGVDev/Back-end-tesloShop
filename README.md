@@ -34,6 +34,9 @@ Teslo Shop es una API RESTful desarrollada con NestJS para gestionar productos d
 - 📝 Documentación de API
 - 🧪 Testing con Jest
 - 🛠️ Docker support
+- 🌱 Sistema de seed para datos iniciales
+- 🔄 Validación de datos con DTOs
+- 🏷️ Categorización de productos por género y tipo
 
 ## Requisitos Previos
 
@@ -67,6 +70,10 @@ $ npm run start:dev
 - `PATCH /products/:id` - Actualizar un producto
 - `DELETE /products/:id` - Eliminar un producto
 
+### Seed
+
+- `GET /seed` - Ejecutar el seed de la base de datos con datos iniciales
+
 ## Scripts Disponibles
 
 - `npm run start` - Iniciar la aplicación
@@ -76,6 +83,21 @@ $ npm run start:dev
 - `npm run test:e2e` - Ejecutar tests end-to-end
 - `npm run lint` - Lint del código
 - `npm run format` - Formatear código
+
+## Estructura de Datos
+
+### Productos
+Los productos incluyen las siguientes características:
+- Título
+- Descripción
+- Precio
+- Stock
+- Tamaños disponibles
+- Género (men, women, kid, unisex)
+- Tipo (shirts, hoodies, hats)
+- Imágenes
+- Tags
+- Slug único
 
 ## Licencia
 
